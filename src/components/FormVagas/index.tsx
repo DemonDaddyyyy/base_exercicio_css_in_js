@@ -1,5 +1,5 @@
-import { FormEvent, useState } from 'react'
 import styled from 'styled-components'
+import { FormEvent, useState } from 'react'
 
 type Props = {
   aoPesquisar: (termo: string) => void

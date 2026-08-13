@@ -1,4 +1,3 @@
-```tsx
 import styled from 'styled-components'
 
 const Hero = () => (
@@ -50,4 +49,3 @@ const H2 = styled.h2`
 `
 
 export default Hero
-```

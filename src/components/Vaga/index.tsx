@@ -11,7 +11,7 @@ type Props = {
 }
 
 const Vaga = (props: Props) => (
-  <Li>
+  <ListaVagas>
     <H3>{props.titulo}</H3>
     <ul>
       <li>Localizacao: {props.localizacao}</li>
@@ -22,32 +22,31 @@ const Vaga = (props: Props) => (
       </li>
       <li>Requisitos: {props.requisitos.join(', ')}</li>
     </ul>
-    <A href="#">
-      Ver detalhes e candidatar-se
-    </A>
-  </Li>
+    <A href="#">Ver detalhes e candidatar-se</A>
+  </ListaVagas>
 )
 
-const Li = styled.li `
+const ListaVagas = styled.li`
   border: 1px solid var(--cor-principal);
   background-color: var(--cor-secundaria);
   color: var(--cor-principal);
   padding: 16px;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
   border-radius: 8px;
 
-    &:hover {
+  &:hover {
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
   }
 
-   &:hover a {
+  &:hover a {
     border-color: var(--cor-principal);
     background-color: var(--cor-secundaria);
     color: var(--cor-principal);
-  }`
+  }
+`
 
-  const H3 = styled.h3`
+const H3 = styled.h3`
   font-weight: bold;
   margin-bottom: 16px;
 `
